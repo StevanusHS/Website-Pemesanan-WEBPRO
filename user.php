@@ -1,0 +1,115 @@
+<?php  
+    session_start();
+      if(!isset($_SESSION['login_user'])) {
+        header("location: login.php");
+      }else{
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <title>Warming Up</title>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar p-5">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="user.php">Home</a></li>
+                <li><a href="menu_pembeli.php">Menu</a></li>
+                <li><a href="pesanan_pembeli.php">Pesanan</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+            <h1 class="logo">Warming Up</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="title" id="home">Warming Up</h1>
+            <p>Food & Beverage</p>
+            <a href="menu_pembeli.php" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+  <!-- Akhir Navbar -->
+
+  <!-- Menu -->    
+      <div class="container">
+        <div class="judul text-center mt-5">
+          <h3 class="font-weight-bold">WARMING UP</h3>
+          <h5>Lt.4, Fakultas Ilmu Terapan, Universitas Telkom
+          <br>Buka Jam <strong>08:00 - 18:00</strong></h5>
+        </div>
+
+        <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <h2>Warming Up</h2>
+                <p>
+                Warming Up adalah startup mahasiswa di Telkom University yang bergerak di food and beverage serta manajemen mini coworking space. Warming UP merupakan hasil kolaborasi Startup Ketringan dan Research Alliance Ko+Lab  Fakultas Ilmu Terapan Telkom University. 
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="images/Background/bg2.JPG" alt="warming up cafe" />
+            </div>
+        </div>
+        </section>
+
+        <div class="row mb-5 mt-5 ">
+          <div class="col-md-6 d-flex justify-content-end">
+            <div class="card bg-dark text-white border-light">
+              <img src="images/background/bg1.jpg" class="card-img" alt="kitchen">
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-start">
+            <div class="card bg-dark text-white border-light">
+              <img src="images/background/bg3.JPG" class="card-img" alt="coworking space">
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Akhir Menu -->
+
+  <!-- Awal Footer -->
+      <hr class="footer">
+      <div class="container">
+        <div class="row footer-body">
+          <div class="col-md-6">
+          <div class="copyright">
+            <strong>Copyright</strong> <i class="far fa-copyright"></i>2023 -  Warming Up</p>
+          </div>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end">
+          <div class="icon-contact">
+          <label class="font-weight-bold">Follow Us </label>
+          <a href="https://www.instagram.com/warmingupid/"><img src="images/icon/ig.png" class="mr-3" data-toggle="tooltip" title="Instagram"></a>
+        </div>
+          </div>
+        </div>
+      </div>
+  <!-- Akhir Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </body>
+</html>
+<?php } ?>
